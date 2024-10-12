@@ -15,8 +15,8 @@
 
 ticket_count = 2
 service_tickets = {
-    2 : {"Customer": "Alice", "Issue": "Login problem", "Open": True},
-    1 : {"Customer": "Bob", "Issue": "Payment issue", "Open": False}
+    1 : {"Customer": "Alice", "Issue": "Login problem", "Open": True},
+    2 : {"Customer": "Bob", "Issue": "Payment issue", "Open": False}
 }
 
 def main():
@@ -48,7 +48,7 @@ def main():
 
 
 #---Open new ticket
-def new_ticket (tickets):
+def new_ticket (ticket_count):
     ticket_count +=1
     service_tickets.update( {
         ticket_count : { 
